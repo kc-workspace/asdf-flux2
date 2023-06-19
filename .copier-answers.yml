@@ -1,6 +1,6 @@
 ---
 ## Changes here will be overwritten by Copier; NEVER EDIT MANUALLY
-_commit: v1.3.3-6-g552c56c
+_commit: v1.3.3-7-g6f04645
 _src_path: .
 app_description: open and extensible continuous delivery solution for Kubernetes.
 app_name: flux

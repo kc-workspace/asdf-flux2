@@ -28,14 +28,15 @@ __asdf_bin_download() {
   kc_asdf_debug "download output: %s" "$tmppath"
   kc_asdf_fetch_file "$download" "$tmppath"
 
-  if [ -z "$ASDF_INSECURE" ]; then
+  if [ -z "${ASDF_INSECURE:-}" ]; then
     local checksum_tmpfile="checksum.tmp" checksum_file="checksum.txt"
-    local checksum_cmd="sha256sum"
     local checksum_url
     checksum_url="$(
       kc_asdf_template "${KC_ASDF_CHECKSUM_URL:?}" "${tmpl_variables[@]}"
     )"
 
+    kc_asdf_step_start "checksum" "sha256sum %s" \
+      "$checksum_url"
     kc_asdf_debug "checksum output: %s" "$tmpdir/$checksum_tmpfile"
     kc_asdf_fetch_file "$checksum_url" "$tmpdir/$checksum_tmpfile"
     if ! grep "$tmpfile" "$tmpdir/$checksum_tmpfile" >"$tmpdir/$checksum_file"; then
@@ -43,7 +44,9 @@ __asdf_bin_download() {
         "$tmpfile"
     fi
 
-    if ! "$checksum_cmd" --check "$tmpdir/$checksum_file"; then
+    if kc_asdf_checksum "$tmpdir/$checksum_file"; then
+      kc_asdf_step_success "checksum" "PASSED"
+    else
       kc_asdf_throw 9 "checksum failed, different shasum"
     fi
   else
