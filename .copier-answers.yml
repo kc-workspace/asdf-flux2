@@ -1,6 +1,6 @@
 ---
 ## Changes here will be overwritten by Copier; NEVER EDIT MANUALLY
-_commit: v1.3.3-39-g709bb6e
+_commit: v1.3.3-40-g5f4ba86
 _src_path: /Users/kamontat/Desktop/Personal/asdf-plugin-template
 app_desc: A open and extensible continuous delivery solution for Kubernetes.
 app_name: flux
