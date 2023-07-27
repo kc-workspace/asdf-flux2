@@ -33,7 +33,7 @@
 
 ### Miscellaneous
 
-* improve log message for readiability ([e85b773](https://github.com/kc-workspace/asdf-flux2/commit/e85b773e290b8c7624f873d666eb4011f6fbe3da))
+* improve log message for readability ([e85b773](https://github.com/kc-workspace/asdf-flux2/commit/e85b773e290b8c7624f873d666eb4011f6fbe3da))
 * update terminology ([591e3b8](https://github.com/kc-workspace/asdf-flux2/commit/591e3b80f806fa97540e9f20600efe2a8c67766e))
 * use asdf instead of ASDF ([d0469d4](https://github.com/kc-workspace/asdf-flux2/commit/d0469d462c5cc4727ddb7fa9695acddcc75efd6a))
 
