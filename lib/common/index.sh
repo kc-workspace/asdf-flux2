@@ -17,10 +17,12 @@ export KC_ASDF_ORG KC_ASDF_NAME KC_ASDF_REPO
 ## Application information
 KC_ASDF_APP_TYPE="standalone"
 KC_ASDF_APP_NAME="flux"
+KC_ASDF_APP_WEBS="https://fluxcd.io"
 KC_ASDF_APP_DESC="A open and extensible continuous delivery solution for Kubernetes."
 KC_ASDF_APP_REPO="https://github.com/fluxcd/flux2"
 export KC_ASDF_APP_TYPE KC_ASDF_APP_NAME
-export KC_ASDF_APP_DESC KC_ASDF_APP_REPO
+export KC_ASDF_APP_WEBS KC_ASDF_APP_DESC
+export KC_ASDF_APP_REPO
 
 # shellcheck source-path=SCRIPTDIR/internal.sh
 source "${KC_ASDF_PLUGIN_PATH:?}/lib/common/internal.sh" || exit 1
