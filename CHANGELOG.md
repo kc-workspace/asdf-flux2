@@ -1,5 +1,20 @@
 # Changelog
 
+## [1.2.1](https://github.com/kc-workspace/asdf-flux2/compare/v1.2.0...v1.2.1) (2023-11-06)
+
+
+### Improvements
+
+* update plugin from template [autocommit] ([f9485cf](https://github.com/kc-workspace/asdf-flux2/commit/f9485cf81eea277513fa89c073853db6d63cb9ba))
+* update plugin from template [autocommit] ([0ac71a8](https://github.com/kc-workspace/asdf-flux2/commit/0ac71a842e4571d12d00add04dcd3a35e66c327f))
+* update plugin from template [autocommit] ([4068211](https://github.com/kc-workspace/asdf-flux2/commit/4068211e22079a2dfb0f9737965dbc2f336ebc31))
+* update plugin from template [autocommit] ([6a36e11](https://github.com/kc-workspace/asdf-flux2/commit/6a36e11b0bdaa226e4a5f1844e2762d0dd86ce75))
+
+
+### Miscellaneous
+
+* fix typo on CHANGELOG ([cfc851b](https://github.com/kc-workspace/asdf-flux2/commit/cfc851b1bafba34015b7e9b3db7341496139311c))
+
 ## [1.2.0](https://github.com/kc-workspace/asdf-flux2/compare/v1.1.0...v1.2.0) (2023-07-27)
 
 
